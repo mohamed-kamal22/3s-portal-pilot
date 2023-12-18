@@ -11,7 +11,7 @@ export default function Page() {
         <div className='tailwind'>
             <p className='flex justify-center font-bold capitalize text-3xl my-3 text-sky-500'>
                 <p className='flex' style={StyleTailwind}>
-                    <img className='mr-4' src="/Tailwind_CSS_Logo.svg" width={40} />
+                    <img className='mr-4' src="/Tailwind_CSS_Logo.svg" width={40} alt='tailwind-logo'/>
                     <span>tailwind Css</span>
                 </p>
             </p>
@@ -48,7 +48,7 @@ export default function Page() {
             {/* Grid System */}
             <div className='mx-auto'>
                 <p className='p-2 text-2xl text-red-800'>Grid System</p>
-                <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4" style={{padding: "0 8px"}}>
                     <div className="bg-blue-900 text-white p-3 text-center">Item 1</div>
                     <div className="bg-green-900 text-white p-3 text-center">Item 2</div>
                     <div className="bg-yellow-900 text-white p-3 text-center">Item 3</div>

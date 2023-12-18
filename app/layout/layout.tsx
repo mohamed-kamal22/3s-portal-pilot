@@ -15,11 +15,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html dir={reduxLanguage.isRtl ? 'rtl' : 'rtl'} lang={reduxLanguage.lang}>
       <body className={`${inter.className} antialiased`}>
         <div className="flex h-screen flex-col md:flex-row">
-          <div className="flex h-screen flex-col md:flex-row">
+          <div className="flex h-screen flex-col md:flex-row w-full">
             <div className="w-full flex-none md:w-64">
               <SideNav />
             </div>
-            <main className="my-0 py-16">{children}</main>
+            <main className="my-0 py-16 w-full">{children}</main>
           </div>
         </div>
       </body>
